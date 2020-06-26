@@ -24,7 +24,7 @@ public class CarRepositoryTest {
     public void testSave(){
         var countBefore = carRepository.count();
         var car = carRepository.save(new Car(
-                1l,"Ford","Mustang", LocalDate.of(1964,05,17)
+                3l,"Tesla","Teslaer", LocalDate.of(2020,07,29)
         ));
         assertNotNull(car.getId());
         assertEquals(countBefore+1, carRepository.count());
