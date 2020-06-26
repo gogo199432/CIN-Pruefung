@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+    <form th:action="@{/}">
+        <button>Cars anzeigen</button>
+    </form>
+    <h1>Cars</h1>
+    <ul>
+        <th:block th:each="car: ${cars}">
+            <li>[[${car.name}]]</li>
+        </th:block>
+    </ul>
+</body>
+</html>
