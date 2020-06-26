@@ -84,13 +84,6 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <includes>
-                        <include>**/*.*</include>
-                    </includes>
-                    <excludedGroups>integration-test</excludedGroups>
-                </configuration>
-
             </plugin>
         </plugins>
     </build>
