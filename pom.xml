@@ -97,6 +97,7 @@
                         <configuration>
                             <skip>true</skip>
                             <goal>test</goal>
+                            <skipTests>true</skipTests>
                         </configuration>
                     </plugin>
                 </plugins>
